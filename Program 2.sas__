@@ -1,0 +1,9 @@
+data WORK.REPORT;
+set sashelp.HEART;
+DROP AgeCHDdiag MRW;
+where AgeAtStart >=45;
+
+data work.report_females;
+set sashelp.heart;
+where Sex=female;
+run;

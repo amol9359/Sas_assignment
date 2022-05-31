@@ -1,0 +1,15 @@
+proc contents data=sashelp.cars;
+run;
+proc contents data=sashelp.heart;
+run;
+proc print data=sashelp.heart(obs=15);
+proc contents data=sashelp.gas;
+run;
+libname class14stats '/home/u61532068';
+libname 11days-No '/home/u61532068';
+libname Data#2-No '/home/u61532068';
+libname Yr 2015-No '/home/u61532068';
+libname _data-yes '/home/u61532068';
+libname Dayes11-yes '/home/u61532068';
+libname modern_@ '/home/u61532068';
+libname DSL '/home/u61532068';
